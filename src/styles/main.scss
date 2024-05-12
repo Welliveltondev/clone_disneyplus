@@ -2,6 +2,7 @@
 @use 'hero';
 @use 'shows';
 @use 'plans';
+@use 'watch-anywhere';
 
 @font-face {
     font-family: Avenir;
@@ -39,6 +40,7 @@ body {
 
 .text--big {
     @include text(18px);
+    color: variaveis.$corTextoPrincipal
 }
 
 .text {
@@ -53,14 +55,17 @@ body {
 
 .title--big {
     @include title(44px);
+    color: variaveis.$corTextoSecundario
 }
 
 .title {
     @include title;
+    color: variaveis.$corTextoSecundario
 }
 
 .title--small {
     @include title(28px);
+    color: variaveis.$corTextoSecundario
 }
 
 .link-text {
